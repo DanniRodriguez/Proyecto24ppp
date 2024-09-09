@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+header {
+  height: 100%;
+  background: #000000;
+  padding: 0 50px;
+  color: #d9e021;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: enca;
+}
+
+header>.logo {
+  flex-direction: column;
+  align-items: start;
+  font-weight: bold;
+  font-size: 1.1vh;
+}
+.menu a {
+  color: #d9e021;
+  padding: 0 10px;
+  transition: 0.4s;
+  font-size: 1.6vh;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+#check {
+  display: none;
+}
+
+    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Huk Kallpalla</title>
+</head>
+<body id="principal">
+  <header>
+    <div class="logo">
+      <h1>Huk Kallpalla</h1>
+      <h2>de vuelta a la tierra</h2>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu"> &#8801 </label>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#informacion">Acerca de</a>
+      <a href="#">Productos</a>
+      <a href="#socials">Contacto</a>
+      <label for="check" class="esconder-menu"> &#215 </label>
+    </nav>
+  </header>
