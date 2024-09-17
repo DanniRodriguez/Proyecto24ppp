@@ -7,7 +7,7 @@
     display: flex;
     height: 100%;
     padding:100px 0 50px 0;
-    background-color: #bacb00;
+    background-color: #1E5128;
     color: #ffffff;
     flex-direction: row;
     padding: 50px;
@@ -78,16 +78,17 @@
   font-size: 17px;
   border-radius: 10px;
   margin-bottom: 15px;
-  color: #bacb00;
-  border: 2px solid #000000;
+  color: #1E5128;
+  border: 2px solid #191A19;
  }
  ::placeholder{
+
   color: rgb(255, 255, 255);
  }
  .btn{
   color: #ffffff;
   border-radius: 10px;
-  background-color: #000000;
+  background-color: #191A19;
   transition: all .5s ease;
  }
   .btn:hover{
