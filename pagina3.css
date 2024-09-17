@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+h1 {
+  padding: 2vh;
+  font-size: 6vh;
+}
+#e {
+  padding: 2vh;
+  font-size: 3vh;
+}
+#servicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50vh 50vh 50vh;
+    grid-template-areas:
+    "Cap CapI"
+    "TalI Tal"
+    "Con ConI";
+  }
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c7b69f;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.descripS {
+  padding: 10vh;
+  font-size: 2.5vh;
+  text-align:justify;
+  text-align-last: center;
+}
+button {
+    background-color: #68ca41;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 2vh;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+button:hover {
+    background-color: #003634; 
+    transform: translateY(-3px);
+}
+button:active {
+    transform: translateY(2px);
+
+} 
+.imagen {
+   object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.texto>.tituloS,.descripS {
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
+.descripS {
+  opacity: 0;
+}
+.texto:hover .tituloS {
+  opacity: 0;
+}
+.texto:hover .descripS {
+  opacity: 1;
+}
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  text-align: center;
+  gap: 3vh;
+}
+/* Desde aca no me sale :(*/
+.contprod {
+  background-color: #c6da44;
+  display: flex;
+  margin: 2vh;
+  border-radius: 15px;
+  width: 43vh;
+  height: 15vh;
+  text-align: right;
+}
+.contprod> img {
+  justify-content: center;
+}
+.contprod>h3 {
+  text-align: center;
+}
+.descripP {
+  font-size: 2vh;
+  text-align:justify;
+  text-align-last: center;
+}
