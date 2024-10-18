@@ -10,19 +10,21 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        box-sizing: border-box;
     }
+
     #titulitos {
-    font-size: 2rem;
-    color: #A19F32;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center; /* Esto centra el texto */
-}
+        font-size: 2rem;
+        color: #A19F32;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
 
     #historia {
-        background-image: url("fondo2.png");
+        background-image: url("imgen/fondo2.png");
         background-size: cover;
         padding: 60px 20px;
         color: white;
@@ -147,106 +149,108 @@
     }
 
     #Cartas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-direction: row;
-    padding: 20px;
-    flex-wrap: wrap; /* Añadido para permitir que las cartas se ajusten en pantallas pequeñas */
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 20px;
+        flex-wrap: wrap;
+        /* Añadido para permitir que las cartas se ajusten en pantallas pequeñas */
+    }
 
-#card {
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
-    height: 300px;
-    border-radius: 5px;
-    border: 2px solid #dce00d;
-    background-color: #ffffff;
-    overflow: hidden;
-    position: relative;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Añadido para suavizar la transformación */
-}
-
-#card>h2 {
-    color: #dce00d;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 10px 0;
-    transition: color 0.3s ease;
-    justify-content: center;
-}
-
-#lore {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background:#6C0DE0;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#card:hover #lore {
-    opacity: 1;
-}
-
-#protexto {
-    color: #ffffff;
-    margin-left: 5%;
-}
-
-
-@media (max-width: 1024px) {
     #card {
-        width: 180px;
-        height: 270px;
+        display: inline-block;
+        margin: 20px;
+        width: 200px;
+        height: 300px;
+        border-radius: 5px;
+        border: 2px solid #dce00d;
+        background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        /* Añadido para suavizar la transformación */
     }
 
     #card>h2 {
-        font-size: 1.4em;
+        color: #dce00d;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0;
+        transition: color 0.3s ease;
+        justify-content: center;
     }
 
-    #lore a {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 768px) {
-    #card {
-        width: 150px;
-        height: 230px;
-    }
-
-    #card>h2 {
-        font-size: 1.2em;
-    }
-
-    #lore a {
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 480px) {
-    #card {
-        width: 120px;
-        height: 200px;
+    #lore {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #6C0DE0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    #card>h2 {
-        font-size: 1em;
+    #card:hover #lore {
+        opacity: 1;
     }
 
-    #lore a {
-        font-size: 0.7em;
+    #protexto {
+        color: #ffffff;
+        margin-left: 5%;
     }
-}
+
+
+    @media (max-width: 1024px) {
+        #card {
+            width: 180px;
+            height: 270px;
+        }
+
+        #card>h2 {
+            font-size: 1.4em;
+        }
+
+        #lore a {
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #card {
+            width: 150px;
+            height: 230px;
+        }
+
+        #card>h2 {
+            font-size: 1.2em;
+        }
+
+        #lore a {
+            font-size: 0.8em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #card {
+            width: 120px;
+            height: 200px;
+        }
+
+        #card>h2 {
+            font-size: 1em;
+        }
+
+        #lore a {
+            font-size: 0.7em;
+        }
+    }
 
     @media (max-width: 768px) {
         #textos h1 {
@@ -336,29 +340,15 @@
                 </div>
             </div>
         </div>
-        <div id="tarjeta-wrap">
-            <div id="tarjeta">
-                <div id="adelaante">
-                    <p>Convenios</p>
-                </div>
-                <div id="atras">
-                    <p>Agrecol<br>
-                        Univalle<br>
-                        GAMC<br>
-                        Laguna Camping<br>
-                        Fundación Agrónomos por Bolivia</p>
-                </div>
-            </div>
-        </div>
     </section>
     <section id="ambientes">
         <h1 id="titulitos">Ambientes</h1>
         <div id="container">
             <div id="image-grid">
-                <div id="image-item"><img src="am1.png" alt="Seamos Verdes"></div>
-                <div id="image-item"><img src="am2.JPG" alt="Grupo con plantas"></div>
-                <div id="image-item"><img src="am3.JPG" alt="Kallpalla compostaje"></div>
-                <div id="image-item"><img src="am4.jpeg" alt="Hablemos de basura"></div>
+                <div id="image-item"><img src="imgen/am1.png" alt="Seamos Verdes"></div>
+                <div id="image-item"><img src="imgen/am2.JPG" alt="Grupo con plantas"></div>
+                <div id="image-item"><img src="imgen/am3.JPG" alt="Kallpalla compostaje"></div>
+                <div id="image-item"><img src="imgen/am4.jpeg" alt="Hablemos de basura"></div>
             </div>
         </div>
     </section>
@@ -399,7 +389,7 @@
             </div>
         </div>
     </section>
-    <?php require "1.6 pie de pagina.php"; ?>
+    <?php require "2.10 pie de pagina.php"; ?>
 </body>
 
 </html>
