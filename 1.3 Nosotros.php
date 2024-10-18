@@ -9,20 +9,20 @@
 <style>
     * {
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
     }
     #titulitos {
     font-size: 2rem;
     color: #A19F32;
     margin-bottom: 20px;
     justify-content: center;
-    text-align: center; /* Esto centra el texto */
+    text-align: center; 
 }
 
     #historia {
-        background-image: url("fondo2.png");
+        background-image: url("imgen/fondo2.png");
         background-size: cover;
         padding: 60px 20px;
         color: white;
@@ -336,29 +336,15 @@
                 </div>
             </div>
         </div>
-        <div id="tarjeta-wrap">
-            <div id="tarjeta">
-                <div id="adelaante">
-                    <p>Convenios</p>
-                </div>
-                <div id="atras">
-                    <p>Agrecol<br>
-                        Univalle<br>
-                        GAMC<br>
-                        Laguna Camping<br>
-                        Fundación Agrónomos por Bolivia</p>
-                </div>
-            </div>
-        </div>
     </section>
     <section id="ambientes">
         <h1 id="titulitos">Ambientes</h1>
         <div id="container">
             <div id="image-grid">
-                <div id="image-item"><img src="am1.png" alt="Seamos Verdes"></div>
-                <div id="image-item"><img src="am2.JPG" alt="Grupo con plantas"></div>
-                <div id="image-item"><img src="am3.JPG" alt="Kallpalla compostaje"></div>
-                <div id="image-item"><img src="am4.jpeg" alt="Hablemos de basura"></div>
+                <div id="image-item"><img src="imgen/am1.png" alt="Seamos Verdes"></div>
+                <div id="image-item"><img src="imgen/am2.JPG" alt="Grupo con plantas"></div>
+                <div id="image-item"><img src="imgen/am3.JPG" alt="Kallpalla compostaje"></div>
+                <div id="image-item"><img src="imgen/am4.jpeg" alt="Hablemos de basura"></div>
             </div>
         </div>
     </section>
@@ -399,7 +385,7 @@
             </div>
         </div>
     </section>
-    <?php require "1.6 pie de pagina.php"; ?>
+    <?php require "1.7 pie de pagina.php"; ?>
 </body>
 
 </html>
