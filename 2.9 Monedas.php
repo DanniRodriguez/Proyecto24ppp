@@ -1,257 +1,310 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Monedas</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
-</head>
-<style>
+<<!DOCTYPE html>
+  <html>
 
-*{
-  font-family: 'poppins' , sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Monedas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
 
-#ingreso{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url(fondo1.jpg);
-  background-size:cover;
-  background-position: center;
-}
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 99;
-}
+    #ingreso {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url("imgen/fondo1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
 
-.logo{
-  font-size: 2.3rem;
-  color: white;
-  user-select: none;
-  cursor: pointer;
-}
-.navegacion a{
-  position: relative;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 200;
-  margin-left: 40px;
-}
-.navegacion a::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: -6px;
-  left: 0;
-  height: 2px;
-  background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s;
-}
-.navegacion a:hover::after{
-  transform: scaleX(1);
-  transform-origin: left;
-}
-.fondo{
-  position: relative;
-  width: 380px;
-  height: 380px;
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: transform .5s ease height 0.2s ease;
-  transform: scale(1);
-}
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 99;
+    }
 
-.fondo .contenedor-form{
-  width: 100%;
-  padding: 40px;
-}
+    .logo {
+      font-size: 2.3rem;
+      color: white;
+      user-select: none;
+      cursor: pointer;
+    }
 
-.fondo .contenedor-form.login{
-  transition: 0.17s ease;
-  transform: translateX(0);
-}
+    .navegacion a {
+      position: relative;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 200;
+      margin-left: 40px;
+    }
 
-.fondo.active .contenedor-form.login{
-  transition: none;
-  transform: translateX(-400px);
-}
-.fondo.active .contenedor-form.registrar{
- transition: transform 0.17s ease;
- transform: translateX(0);
-}
-.fondo .contenedor-form h2 {
-  font-size: 2em;
-  color: #ffffff;
-  text-align: center;
-}
+    .navegacion a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: -6px;
+      left: 0;
+      height: 2px;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s;
+    }
 
-.contenedor-input{
-  position: relative;
-  width: 107%;
-  height: 60px;
-  border-bottom: 2px solid #ffffff;
-  margin: 30px 0;
-}
+    .navegacion a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
 
-.contenedor-input label{
-  position: absolute;
-  top: 50%;
-  left: 7px;
-  transform: translateY(-50%);
-  font-size: 1em;
-  font-weight: 200;
-  pointer-events: none;
-  transition: 0.4s;
-  color: #ffffff;
-}
+    .fondo {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: transform .5s ease height 0.2s ease;
+      transform: scale(1);
+    }
 
-.contenedor-input input:focus~label, 
-.contenedor-input input:valid~label{
-  top: 0px;
+    .fondo .contenedor-form {
+      width: 100%;
+      padding: 40px;
+    }
 
-}
+    .fondo .contenedor-form.login {
+      transition: 0.17s ease;
+      transform: translateX(0);
+    }
 
-.contenedor-input input{
-  width: 110%;
-  height: 110%;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  color: #ffffff;
-  padding: 0 35px 0 5px;
-}
+    .fondo.active .contenedor-form.login {
+      transition: none;
+      transform: translateX(-400px);
+    }
 
-.contenedor-input .icono{
-  position: absolute;
-  right: 8px;
-  font-size: 1.4em;
-  color: #F1EFEF;
-  line-height: 57px;
-}
+    .fondo.active .contenedor-form.registrar {
+      transition: transform 0.17s ease;
+      transform: translateX(0);
+    }
 
-.recordar{
-  font-size: 0.6em;
-  margin: -14px 5% 10px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
+    .fondo .contenedor-form h2 {
+      font-size: 2em;
+      color: #ffffff;
+      text-align: center;
+    }
 
-.recordar label input{ 
-  accent-color: #090f1d;
-  margin-right: 3px;
-}
-.recordar a{
-  color: #ffffff;
-  left: 5%;
-   margin: 1px 5% 0.5px;
-  text-decoration: none;
-}
+    .contenedor-input {
+      position: relative;
+      width: 107%;
+      height: 60px;
+      border-bottom: 2px solid #ffffff;
+      margin: 30px 0;
+    }
 
-.recordar a:hover{
-   text-decoration: underline;
-}
+    .contenedor-input label {
+      position: absolute;
+      top: 50%;
+      left: 7px;
+      transform: translateY(-50%);
+      font-size: 1em;
+      font-weight: 200;
+      pointer-events: none;
+      transition: 0.4s;
+      color: #ffffff;
+    }
 
-.btn{
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-  background-color: #000000;
-  color: #F1EFEF;
-}
+    .contenedor-input input:focus~label,
+    .contenedor-input input:valid~label {
+      top: 0px;
 
-.registrar{
-  font-size: 0.9em;
-  color: #F1EFEF;
-  text-align: center;
-  margin: 25px 0 10px;
-}
+    }
 
-.registrar p a{
-  color: #F1EFEF;
-  text-decoration: none;
-}
+    .contenedor-input input {
+      width: 110%;
+      height: 110%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      color: #ffffff;
+      padding: 0 35px 0 5px;
+    }
 
-.registrar p a:hover{
-  text-decoration: underline;
-  text-decoration-color: #ffffff;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-#principal{
+    .contenedor-input .icono {
+      position: absolute;
+      right: 8px;
+      font-size: 1.4em;
+      color: #F1EFEF;
+      line-height: 57px;
+    }
+
+    .recordar {
+      font-size: 0.6em;
+      margin: -14px 5% 10px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+
+    .recordar label input {
+      accent-color: #090f1d;
+      margin-right: 3px;
+    }
+
+    .recordar a {
+      color: #ffffff;
+      left: 5%;
+      margin: 1px 5% 0.5px;
+      text-decoration: none;
+    }
+
+    .recordar a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      height: 40px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      background-color: #000000;
+      color: #F1EFEF;
+    }
+
+    .registrar {
+      font-size: 0.9em;
+      color: #F1EFEF;
+      text-align: center;
+      margin: 25px 0 10px;
+    }
+
+    .registrar p a {
+      color: #F1EFEF;
+      text-decoration: none;
+    }
+
+    .registrar p a:hover {
+      text-decoration: underline;
+      text-decoration-color: #ffffff;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    #principal {
       display: grid;
-      grid-template-rows: 115px 70vh;
+      grid-template-rows: 115px 800px 160px;
       grid-template-columns: 100%;
       grid-template-areas:
         "enca"
-        "sec1";
+        "sec1"
+        "pie";
       gap: 6px;
-  }
-  @media (max-width: 768px) {
-    #principal {
-        grid-template-rows: 115px 80vh; /* Ajustar alturas de filas */
-        grid-template-areas:
-            "enca"
-            "sec1"; /* Puedes modificar si necesitas cambiar el orden */
     }
-}
-</style>
-<body id="principal">
-<?php
+
+    #fm {
+      grid-area: pie;
+    }
+
+    #inicio {
+      grid-area: enca;
+    }
+
+    #ingreso {
+      grid-area: sec1;
+    }
+
+    @media (max-width: 768px) {
+      #principal {
+        grid-template-rows: 115px 90vh 100vh;
+        grid-template-areas:
+          "enca"
+          "sec1"
+          "pie";
+      }
+    }
+  </style>
+
+  <body id="principal">
+    <header id="inicio">
+      <?php
     require "2.1 Encabezado.php";
     ?>
-   <section id="ingreso">
-  <div class="fondo">
-  <div class="contenedor-form login">
-    <h2>INTERCAMBIO</h2>
-    <form action="#">
-      <div class="contenedor-input">
-        <span class="icono"><i class="fa-solid fa-user"></i></i></span>
-        <input type="number" required>
-             <label for="#">Cantidad</label>
-      </div>
-      <div class="contenedor-input">
-        <span class="icono"><i class="fa-regular fa-calendar-days"></i></span>
-        <input type="date" required>
-             <label for="#"></label>
-      </div>
-               <button type="submit" class="btn">Intercambiar</button>
-           <div class="registrar">
-             <p><a href="2.6 Ecocanje.php" class="registrar-link">VOLVER</a></p>
-           </div>
-      </div>
-       </form>
-</section>
-    <?php // require "1.6 pie de pagina.php";
+    </header>
+
+    <section id="ingreso">
+      <div class="fondo">
+        <div class="contenedor-form login">
+          <h2>INTERCAMBIO</h2>
+          <form action="#">
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-user"></i></i></span>
+              <input type="number" name="dos">
+              <label for="#">Cantidad</label>
+            </div>
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-regular fa-calendar-days"></i></span>
+              <input type="date" required>
+              <label for="#"></label>
+            </div>
+            <button type="submit" class="btn">Intercambiar</button>
+            <div class="registrar">
+              <p><a href="2.7 Ecocanje.php" class="registrar-link">VOLVER</a></p>
+            </div>
+        </div>
+        </form>
+    </section>
+    <footer id="fm">
+      <?php require "2.10 pie de pagina.php";
     ?>
-</body>
-</html>
+    </footer>
+    <script>
+      $("form").validate({
+        rules: {
+          dos: {
+            required: true,
+            minlength: 5,
+            maxlength: 20
+          }
+        },
+        messages: {
+          dos: {
+            required: "este campo no puede estar vacio.",
+            minlength: "el mínimo de letras es 5.",
+            maxlength: "el maximo de letras es 20."
+          }
+        }
+      }
+      )
+    </script>
+  </body>
+
+  </html>
