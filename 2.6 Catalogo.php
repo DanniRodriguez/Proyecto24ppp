@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="2.5 Catalogo.css" rel="stylesheet" type="text/css" />
     <title>Catalogo</title>
 </head>
 <style>
