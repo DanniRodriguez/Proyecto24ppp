@@ -88,7 +88,7 @@
                 transition: right 0.8s;
                 display: flex;
                 flex-direction: column;
-            }
+                z-index: 100;
 
             #menu .enlaces {
                 display: block;
