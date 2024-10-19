@@ -12,13 +12,13 @@ include('db.php');
         $nombres = $_POST['nombres'];
         $ap_p = $_POST['ap_p'];
         $ap_m = $_POST['ap_m'];
-        $usrname =$_POST['usrname'];
+        $usrnamer =$_POST['usrname'];
         $telefono = $_POST['telefono'];
         $correo_usuario=$_POST['correo_usuario'];
         $direccion = $_POST['direccion'];
         $fecha_n = $_POST['fecha_n'];
         $contrasenia_usuario = $_POST['contrasenia_usuario'];
-        $_SESSION['usrname']=$usrname;
+        $_SESSION['usrname']=$usrnamer;
                 //$contraseña = hash('sha512',$_POST['contraseña']);
 
 
