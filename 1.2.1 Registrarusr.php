@@ -218,7 +218,7 @@ padding-top:92px;
   <h2>Registrarse</h2>
   <form  method="POST" action="1.1.2 Registrarusr.php">
       <div id="registrar">
-      <p>¿Tienes una cuenta? <a href="1.2.1 Sesion.php" class="login-link">Iniciar Sesión</a></p> 
+      <p>¿Tienes una cuenta? <a href="1.2.3 Sesion.php" class="login-link">Iniciar Sesión</a></p> 
     </div>
   <div id="contenedor-input">
       <span class="icono"><i class="fa-solid fa-globe"></i></span>
