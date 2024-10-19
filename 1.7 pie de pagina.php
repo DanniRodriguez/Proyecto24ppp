@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="1.6 pie de pagina.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-
     <title>Pie de página</title>
     <style>
         #footer-container {
@@ -17,12 +15,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #f0f0f0; /* Fondo gris suave */
+  background-color: #f0f0f0; 
   padding: 20px;
-  font-family: 'Poppins', sans-serif; /* Tipografía moderna y legible */
-  color: #333; /* Color de texto oscuro */
+  font-family: 'Poppins', sans-serif; 
+  color: #333; 
 }
-
 #map {
   margin-bottom: 20px;
 }
@@ -39,12 +36,12 @@
   margin: 0 10px;
   text-decoration: none;
   font-size: 24px;
-  color: #5e6e00; /* Verde oscuro */
+  color: #5e6e00; 
   transition: color 0.3s;
 }
 
 #social-media a:hover {
-  color: #8db600; /* Verde vibrante al pasar el mouse */
+  color: #8db600;
 }
 #menu-summary, #hours {
   margin: 10px 0;
@@ -61,38 +58,34 @@
 
 #menu-summary > ul > li > a {
   text-decoration: none;
-  color: #5e6e00; /* Verde oscuro */
+  color: #5e6e00; 
   transition: color 0.3s;
 }
 
 #menu-summary > ul > li > a:hover {
-  color: #8db600; /* Verde vibrante al pasar el mouse */
+  color: #8db600; 
 }
 
 #hours > p {
   margin: 5px 0;
-  color: #777; /* Gris claro para horarios */
+  color: #777;
 }
-
-
 /* Responsividad */
 @media (min-width: 768px) {
   #footer-container {
     flex-direction: row;
-    justify-content: space-between; /* Espacio entre elementos */
+    justify-content: space-between; 
     text-align: center;
-    padding: 40px; /* Mayor padding en pantallas grandes */
+    padding: 40px;
   }
-
+    
   #map, #social-media, #menu-summary, #hours {
     flex: 1;
     margin: 0 20px;
   }
 }
-
         </style>
 </head>
-
 <body>
     <footer>
         <div id="footer-container">
@@ -103,7 +96,6 @@
             </div>
             <div id="rs">
                 <div id="social-media">
-
                     <a href="https://www.facebook.com/Hukallpalla.bo/" target="_blank"><i
                             class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/hukallpalla.bo/" target="_blank"><i
@@ -113,7 +105,6 @@
                             class="fa-brands fa-tiktok"></i>
                     </a>
                 </div>
-
             </div>
             <div id="menu-summary">
                 <h4>Menú</h4>
@@ -125,7 +116,6 @@
                     <li><a href="1.6 Ecocanje.php">Ecocanje</a></li>
                 </ul>
             </div>
-
             <div id="hours">
                 <h4>Horarios de Atención</h4>
                 <p>Lunes a Viernes: 9:00 AM - 5:00 PM</p>
@@ -155,5 +145,4 @@
  )
 </script>
 </body>
-
 </html>
