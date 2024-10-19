@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,18 +87,14 @@
                 padding: 100px 0;
                 transition: right 0.8s;
                 display: flex;
-                /* Asegurarse de que el menú esté en flex */
                 flex-direction: column;
-                /* Alinear los elementos en columna */
             }
 
             #menu .enlaces {
                 display: block;
-                /* Hacer que los enlaces sean bloques */
                 padding: 10px;
                 color: #000000;
                 width: 100%;
-                /* Tomar el ancho completo */
             }
 
             #esconder-menu {
@@ -107,7 +102,6 @@
                 top: 40px;
                 right: 40px;
             }
-
             /* Mostrar menú al seleccionar */
             #check:checked~#menu {
                 right: 0;
@@ -115,7 +109,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <a href="1.2 Huk Kallpalla.php" class="enlaces">
@@ -141,5 +134,4 @@
         </div>
     </header>
 </body>
-
 </html>
