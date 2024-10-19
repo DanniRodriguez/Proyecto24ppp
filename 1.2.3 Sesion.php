@@ -94,8 +94,8 @@ padding-top:100px;
 }
 
 #contenedor-input input {
-  width: 100%; /* Changed to 100% for better responsiveness */
-  height: 100%; /* Changed to 100% for better responsiveness */
+  width: 100%;
+  height: 100%; 
   background: transparent;
   border: none;
   outline: none;
@@ -200,7 +200,7 @@ padding-top:100px;
   <div id="fondo">
     <div id="contenedor-form" class="login">
       <h2>Iniciar Sesión</h2>
-      <form  action="1.2.2 Sesion.php"  method="POST">
+      <form  action="1.2.4 Sesion.php"  method="POST">
         <div id="contenedor-input">
           <span class="icono"><i class="fa-solid fa-user"></i></span>
           <input type="text" required name="usrname" >
