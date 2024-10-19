@@ -202,7 +202,7 @@ While($registro = mysqli_fetch_array($resultado_consulta)){
          echo"<img src=".$registro['img_producto'].">";
          echo"<div class='producto-info'>";
            echo"<h3>".$registro['nombre']."</h3>";
-             echo"<p >".$registro['precio']. "&nbspBs. </p>";
+             echo"<p >".$registro['precio']. "&nbspHukkoins. </p>";
              echo"<p >".$registro['cantidad']. "&nbsp Kg. </p>";
          echo"</div>";
      echo"</div>";
