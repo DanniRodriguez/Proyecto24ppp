@@ -386,7 +386,7 @@ padding-top:92px;
 </script>
 </section>
 <?php 
-    require "1.6 pie de pagina.php";
+    require "1.7 pie de pagina.php";
 ?>
 </body>
 </html>
