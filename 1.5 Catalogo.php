@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,7 +188,7 @@
   <center>
     <h2 id="e">¿Le interesa alguno de nuestros servicios?</h2>
   </center>
-  <center><button>¡coticemos!</button></center>
+  <center><button><a>¡coticemos!</a></button></center>
   <h1 class="H1">PRODUCTOS</h1>
   <?php
 
