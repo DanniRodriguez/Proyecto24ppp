@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
     <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
@@ -168,19 +167,17 @@ padding-top:100px;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
             #contenedor-form h2 {
                 font-size: 1.5em;
             }
-
+    
             .btn {
                 font-size: 0.9em;
             }
         }
-
-        @media (max-width: 480px) {
+@media (max-width: 480px) {
             #contenedor-form h2 {
                 font-size: 1.3em;
             }
@@ -219,12 +216,9 @@ padding-top:100px;
           <input type="password" required name="contrasenia_usuario">
           <label for="password">Contraseña</label> 
         </div>
-        <div id="recordar">
-          <label for="#"><input type="checkbox">Recordar Sesión</label>
-        </div>
         <button type="submit" class="btn">Iniciar Sesión</button>
         <div id="registrar">
-          <p>¿No tienes cuenta? <a href="1.1.1 Registrarusr.php" class="registrar-link">Registrarse</a></p>
+          <p>¿No tienes cuenta? <a href="1.2.1 Registrarusr.php" class="registrar-link">Registrarse</a></p>
         </div>
       </form>
     </div>
@@ -246,16 +240,16 @@ padding-top:100px;
   },
   messages:{
     usrname:{
-      required:"este campo tiene que ser llenado",
-      minlength:"el minimo de letras es 5",
-      maxlength:"el maximo de letras es 25"
+      required:"este campo tiene que ser llenado.",
+      minlength:"el minimo de letras es 5.",
+      maxlength:"el maximo de letras es 25."
   },
   correo_usuario:{
-      required:"este campo tiene que ser llenado",
+      required:"este campo tiene que ser llenado.",
       email:"El campo debe tener formato de email."
   },
   contrasenia_usuario:{
-      required:"este campo tiene que ser llenado"
+      required:"este campo tiene que ser llenado."
   }
   }
  }
@@ -263,7 +257,7 @@ padding-top:100px;
       </script>
 </section>
 <?php
-    require "1.6 pie de pagina.php";
+    require "1.7 pie de pagina.php";
 ?>
 </body>
 </html>
