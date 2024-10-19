@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="2.5.css" rel="stylesheet" type="text/css" />
     <title>Convenios e Intercambios</title>
 </head>
 <style>
@@ -200,7 +199,7 @@
                     <h2>REFRIGERADOR</h2>
                 </div>
             </div>
-            <div id="registrar"><a href="1.1.1 Registrarusr.php">Quiero registrarme!</a></div>
+            <div id="registrar"><a href="1.2.1 Registrarusr.php">Quiero registrarme!</a></div>
         </div>
     </section>
     <?php
