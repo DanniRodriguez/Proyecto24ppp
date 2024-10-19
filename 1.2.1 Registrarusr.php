@@ -46,12 +46,10 @@
 
 #contenedor-form {
   width: 600px;
-  height: auto; /* Considera usar 'auto' para ajustarlo al contenido */
+  height: auto; 
   padding: 45px;
 }
-
-
-
+    
 #contenedor-form.registrar {
   width: 330px;
   height: 1199px;
@@ -136,8 +134,8 @@ padding-top:92px;
 }
 
 #contenedor-input input {
-  width: 100%; /* Changed to 100% for better responsiveness */
-  height: 100%; /* Changed to 100% for better responsiveness */
+  width: 100%; 
+  height: 100%; 
   background: transparent;
   border: none;
   outline: none;
@@ -153,30 +151,7 @@ padding-top:92px;
   color: #F1EFEF;
   line-height: 57px;
 }
-
-#recordar {
-  font-size: 0.6em;
-  margin: -14px 5% 10px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
-
-#recordar label input {
-  accent-color: #090f1d;
-  margin-right: 3px;
-}
-
-#recordar a {
-  color: #ffffff;
-  margin: 1px 5% 0.5px;
-  text-decoration: none;
-}
-
-#recordar a:hover {
-  text-decoration: underline;
-}
-
+    
 .btn{
     width: 100%;
     height: 30px;
@@ -190,7 +165,6 @@ padding-top:92px;
     color: #F1EFEF;
   }
   
-
 #registrar {
   font-size: 0.9em;
   color: #F1EFEF;
@@ -210,7 +184,6 @@ padding-top:92px;
   text-underline-offset: 4px;
 }
 
-
 @media (max-width: 768px) {
             #contenedor-form {
                 padding: 20px;
@@ -223,15 +196,15 @@ padding-top:92px;
 
         @media (max-width: 480px) {
             #fondo {
-                padding: 10px; /* Espaciado interno reducido */
+                padding: 10px; }
             }
 
             #contenedor-form h2 {
-                font-size: 1.2em; /* Título más pequeño */
+                font-size: 1.2em; 
             }
 
             .btn {
-                height: 35px; /* Ajuste de altura del botón */
+                height: 35px; 
             }
         }
 </style>
@@ -241,10 +214,12 @@ padding-top:92px;
 ?>
 <section id="ingreso">
   <div id="fondo">
-
 <div id="contenedor-form" class="registrar"> 
   <h2>Registrarse</h2>
   <form  method="POST" action="1.1.2 Registrarusr.php">
+      <div id="registrar">
+      <p>¿Tienes una cuenta? <a href="1.2.1 Sesion.php" class="login-link">Iniciar Sesión</a></p> 
+    </div>
   <div id="contenedor-input">
       <span class="icono"><i class="fa-solid fa-globe"></i></span>
       <input type="text" required name="ci">
@@ -301,14 +276,8 @@ padding-top:92px;
       <input type="password" required name="confirmacion">
       <label for="password">Confirmar Contraseña</label> 
     </div>
-    <div id="recordar">
-      <label for="#"><input type="checkbox">Acepto los Términos y Condiciones</label>
-    </div>
     <button type="submit" class="btn">Registrarme</button>
-    <div id="registrar">
-      <p>¿Tienes una cuenta? <a href="1.2.1 Sesion.php" class="login-link">Iniciar Sesión</a></p> 
-    </div>
-    <br><br>
+    <br>
   </form>
 </div>
  
