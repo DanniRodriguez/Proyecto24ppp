@@ -89,7 +89,7 @@
                 display: flex;
                 flex-direction: column;
                 z-index: 100;
-
+            }
             #menu .enlaces {
                 display: block;
                 padding: 10px;
