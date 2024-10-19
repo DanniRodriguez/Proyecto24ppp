@@ -206,7 +206,6 @@ padding-top:92px;
             .btn {
                 height: 35px; 
             }
-        }
 </style>
 <body id="principal">
 <?php
