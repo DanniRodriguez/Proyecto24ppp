@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,7 +115,6 @@
     }
   </style>
 </head>
-
 <body id="principal">
   <?php require "1.1 Encabezado.php"; ?>
   <section id="inicio">
@@ -130,5 +128,4 @@
   </section>
   <?php require "1.7 pie de pagina.php"; ?>
 </body>
-
 </html>
